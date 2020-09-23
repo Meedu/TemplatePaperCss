@@ -14,12 +14,12 @@
                 <p>
                     <a href="javascript:void(0);" onclick="event.preventDefault();
                                                              document.getElementById('logout-form').submit();">安全退出</a>
+                </p>
                 <form class="d-none" id="logout-form" action="{{ route('logout') }}"
                       method="POST"
                       style="display: none;">
                     @csrf
                 </form>
-                </p>
             </div>
         </div>
     </div>

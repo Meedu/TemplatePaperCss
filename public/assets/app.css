@@ -92,3 +92,26 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
+/* 支付界面 */
+.payments {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.payments > .payment-item {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.payments > .payment-item > img {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.payments > .payment-item.active > img {
+    background: none;
+}
