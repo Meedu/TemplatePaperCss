@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.display-none {
+    display: none;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* 样式覆盖 */
+.modal-text {
+    min-width: 244px;
+}
+
+.pagination {
+    padding-left: 0;
+}
+
+/* 视频列表 */
+.video-item {
+    display: flex;
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: rgb(65, 64, 62);
+}
+
+.video-item:hover {
+    text-decoration: none;
+}
+
+.video-item.active {
+    color: rgb(0, 113, 222);
+}
+
+.video-item .video-title {
+    flex: 1;
+}
+
+.video-item .video-duration {
+    width: 200px;
+    text-align: right;
+}
+
+/* 视频播放器 */
+.video-player-container {
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;
+}
+
+.video-player-container .video-play-option-btn {
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
