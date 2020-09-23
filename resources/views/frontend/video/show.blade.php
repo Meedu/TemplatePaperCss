@@ -1,4 +1,4 @@
-@extends('default::frontend.layouts.app')
+@extends('TemplatePaperCss::frontend.layouts.app')
 
 @section('content')
 
@@ -12,14 +12,14 @@
                     @if($user)
                         @if($canSeeVideo)
                             @if($video['aliyun_video_id'] && (int)($gConfig['system']['player']['enabled_aliyun_private'] ?? 0) === 1)
-                                @include('default::frontend.components.player.aliyun', ['video' => $video])
+                                @include('TemplatePaperCss::frontend.components.player.aliyun', ['video' => $video])
                             @else
                                 @if($video['player_pc'] === \App\Constant\FrontendConstant::PLAYER_ALIYUN)
-                                    @include('default::frontend.components.player.aliyun', ['video' => $video])
+                                    @include('TemplatePaperCss::frontend.components.player.aliyun', ['video' => $video])
                                 @elseif($video['player_pc'] === \App\Constant\FrontendConstant::PLAYER_TENCENT)
-                                    @include('default::frontend.components.player.tencent', ['video' => $video])
+                                    @include('TemplatePaperCss::frontend.components.player.tencent', ['video' => $video])
                                 @else
-                                    @include('default::frontend.components.player.xg', ['video' => $video])
+                                    @include('TemplatePaperCss::frontend.components.player.xg', ['video' => $video])
                                 @endif
                             @endif
                         @else

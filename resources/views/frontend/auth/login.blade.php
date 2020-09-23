@@ -1,4 +1,4 @@
-@extends('default::frontend.layouts.app')
+@extends('TemplatePaperCss::frontend.layouts.app')
 
 @section('content')
 

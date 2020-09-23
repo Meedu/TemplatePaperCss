@@ -11,9 +11,11 @@
 
 namespace Addons\TemplatePaperCss;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Addons\TemplatePaperCss\Constants\Constant;
 use Addons\TemplatePaperCss\Commands\AppCommand;
+use Addons\TemplatePaperCss\Http\Middlewares\InjectMiddleware;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,10 +25,10 @@ class AppServiceProvider extends ServiceProvider
         $this->commands([
             AppCommand::class,
         ]);
+        // 注册视图
+        $this->loadViewsFrom(__DIR__ . '/resources/views', Constant::APP_SIGN);
 
-        if ((int)config(Constant::CONFIG_PREFIX . '.status') === 1) {
-            config(['meedu.systen.theme.path' => base_path('addons/TemplatePaperCss/resources/views')]);
-        }
+        Route::pushMiddlewareToGroup('web', InjectMiddleware::class);
     }
 
     public function register()

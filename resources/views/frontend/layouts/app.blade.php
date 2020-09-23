@@ -10,7 +10,7 @@
     <meta name="description" content="{{$description ?? ''}}">
     <title>{{$title ?? ''}}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/papercss@1.8.0/dist/paper.min.css">
-    <link rel="stylesheet" href="{{asset('/addons/TemplatePaperCss/app.css')}}?v=20200923">
+    <link rel="stylesheet" href="{{asset('/addons/TemplatePaperCss/assets/app.css')}}?v=20200923">
     @yield('css')
 </head>
 <body>
