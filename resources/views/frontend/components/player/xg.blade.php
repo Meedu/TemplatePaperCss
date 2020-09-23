@@ -1,3 +1,4 @@
+<script src="//cdn.jsdelivr.net/npm/xgplayer@2.9.6/browser/index.js" type="text/javascript"></script>
 <div id="meedu-player"></div>
 <script>
     const XGPlayerConfig = {

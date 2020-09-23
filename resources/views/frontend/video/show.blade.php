@@ -31,7 +31,7 @@
                     @endif
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 mt-10">
                 <h4 class="border mt-0 mb-10">章节</h4>
                 @foreach($videos as $item)
                     @foreach($item as $videoItem)
